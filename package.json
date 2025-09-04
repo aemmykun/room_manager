@@ -1,0 +1,29 @@
+{
+  "name": "room_manager",
+  "version": "1.0.0",
+  "description": "My first time with Vue.js component. Thanks for your feedback",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.4",
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-vue": "^10.4.0",
+    "playwright": "^1.55.0",
+    "prettier": "^3.6.2"
+  }
+}
