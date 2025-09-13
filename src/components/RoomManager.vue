@@ -1,28 +1,28 @@
 <template>
   <div>
-    <label>อัปโหลดเลขห้องทั้งหมด</label>
+    <label>Update All Room Number</label>
     <textarea v-model="roomNumbers" placeholder="101, 102, 103, ..."></textarea>
 
-    <label>เลือกห้องที่ต้องการกำหนดข้อมูล</label>
+    <label>Selected Rooms</label>
     <select multiple v-model="selectedRooms">
       <option v-for="room in parsedRooms" :key="room">{{ room }}</option>
     </select>
 
-    <label>จำนวนห้องนอน</label>
+    <label>Select Number of Bedroom</label>
     <select v-model="bedroomCount">
-      <option value="1">1 ห้องนอน</option>
-      <option value="2">2 ห้องนอน</option>
-      <option value="3">3 ห้องนอน</option>
+      <option value="1">1 Bedroom</option>
+      <option value="2">2 Bedroom</option>
+      <option value="3">3 Bedroom</option>
     </select>
 
-    <label>ประเภทห้อง</label>
+    <label>Select Room Type</label>
     <select v-model="roomType">
       <option value="S">Standard</option>
       <option value="E">Executive</option>
       <option value="D">Deluxe</option>
     </select>
 
-    <label>ประเภทเตียง</label>
+    <label>Select Bed type</label>
     <select v-model="bedType">
       <option value="K">King</option>
       <option value="Q">Queen</option>
@@ -30,9 +30,9 @@
       <option value="T">Twin</option>
     </select>
 
-    <button @click="assignRoomDetails">บันทึกข้อมูลห้อง</button>
+    <button @click="assignRoomDetails">Save</button>
 
-    <h3>รหัสห้องที่สร้าง:</h3>
+    <h3>Generate Rooms:</h3>
     <ul>
       <li v-for="code in generatedRoomCodes" :key="code">{{ code }}</li>
     </ul>
@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     assignRoomDetails() {
-      alert("ข้อมูลห้องถูกบันทึกแล้ว!");
+      alert("All Data Save");
     }
   }
 };
