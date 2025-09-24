@@ -8,7 +8,7 @@
       <option v-for="room in parsedRooms" :key="room">{{ room }}</option>
     </select>
 
-    <label>Select Number of Bedroom</label>
+    <label>Select Number of Bedrooms</label>
     <select v-model="bedroomCount">
       <option value="1">1 Bedroom</option>
       <option value="2">2 Bedroom</option>
@@ -22,7 +22,7 @@
       <option value="D">Deluxe</option>
     </select>
 
-    <label>Select Bed type</label>
+    <label>Select Bed Type</label>
     <select v-model="bedType">
       <option value="K">King</option>
       <option value="Q">Queen</option>
@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     assignRoomDetails() {
-      alert("All Data Save");
+      alert("All Data Saved");
     }
   }
 };
